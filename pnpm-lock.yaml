@@ -164,6 +164,9 @@ importers:
       '@supabase/ssr':
         specifier: ^0.7.0
         version: 0.7.0(@supabase/supabase-js@2.58.0)
+      '@workspace/types':
+        specifier: workspace:*
+        version: link:../types
       next:
         specifier: ^15.4.5
         version: 15.4.5(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
