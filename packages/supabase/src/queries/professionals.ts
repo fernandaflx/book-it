@@ -3,7 +3,7 @@ import type { Professional } from "@workspace/types";
 
 export async function getProfessionals(
   client: SupabaseClient,
-  filters?: { isActive?: boolean; specialty?: string }
+  filters?: { specialty?: string }
 ): Promise<Professional[]> {
   let query = client.from("professionals").select("*");
 
