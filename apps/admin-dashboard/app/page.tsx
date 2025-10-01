@@ -8,8 +8,9 @@ export default async function Page() {
   const supabase = createClient();
   const professionals = await getProfessionals(supabase);
   console.log(professionals)
+
   return (
-    <div className="flex items-center justify-center min-h-svh">
+    <div className="flex items-center justify-center min-h-svh w-full min-w-screen p-8">
       <div className="flex flex-col items-center justify-center gap-4">
         <h1 className="text-2xl font-bold">Hello World</h1>
         <Button size="sm">Button</Button>
